@@ -15,15 +15,11 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/restaurantStyles.css">
+
     <style>
-        .jumbotron {
-            padding: 2rem;
-        }
-        
         .required-field {
             font-weight: bold;
         }
-        
     </style>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -83,132 +79,129 @@
         </p>
     </noscript>
 
-    <main>
-        <!-- The main element contains all blocks on the page -->
-        <header>
-            <!-- The header element contains only the main title at this point. -->
-            <h1>American Flavors</h1>
-        </header>
+    <header>
+        <!-- The header element contains only the main title at this point. -->
+        <h1>American Flavors</h1>
+    </header>
 
-        <hr>
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fa fa-home"></i> Home
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="contact.html">Contact Us</a>
-            </li>
-        </ul>
-        <hr>
+    <hr>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">
+                <i class="fa fa-home"></i> Home
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact Us</a>
+        </li>
+    </ul>
+    <hr>
 
-        <form class="jumbotron" name="contact-form" action="#" method="POST" onsubmit="return submitContactForm();">
-            <!-- the main contact form -->
-            <div class="form-group row">
-                <label for="contact-name" class="col-lg-5 col-form-label text-lg-right required-field">Name:</label>
-                <div class="col-lg-5">
-                    <input type="text" class="form-control" id="contact-name" name="contact-name" placeholder="Name" >
-                </div>
+    <form class="jumbotron" name="contact-form" action="#" method="POST" onsubmit="return submitContactForm();">
+        <!-- the main contact form -->
+        <div class="form-group row">
+            <label for="contact-name" class="col-lg-5 col-form-label text-lg-right required-field">Name:</label>
+            <div class="col-lg-5">
+                <input type="text" class="form-control" id="contact-name" name="contact-name" placeholder="Name">
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label for="contact-email" class="col-lg-5 col-form-label text-lg-right required-field">Email:</label>
-                <div class="col-lg-5">
-                    <input type="email" class="form-control" id="contact-email" name="contact-email" placeholder="Email" >
-                </div>
+        <div class="form-group row">
+            <label for="contact-email" class="col-lg-5 col-form-label text-lg-right required-field">Email:</label>
+            <div class="col-lg-5">
+                <input type="email" class="form-control" id="contact-email" name="contact-email" placeholder="Email">
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label for="contact-phone" class="col-lg-5 col-form-label text-lg-right required-field">Phone:</label>
-                <div class="col-lg-5">
-                    <input type="text" class="form-control" id="contact-phone" name="contact-phone" placeholder="(###) ###-####" >
-                </div>
+        <div class="form-group row">
+            <label for="contact-phone" class="col-lg-5 col-form-label text-lg-right required-field">Phone:</label>
+            <div class="col-lg-5">
+                <input type="text" class="form-control" id="contact-phone" name="contact-phone" placeholder="(###) ###-####">
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label for="contact-reason" class="col-lg-5 col-form-label text-lg-right required-field">Reason for Inquiry:</label>
-                <div class="col-lg-5">
-                    <select id="contact-reason" name="contact-reason" class="form-control custom-select">
-                        <option value="default" selected>Catering</option>
-                        <option value="private_party">Private Party</option>
-                        <option value="feedback">Feedback</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
+        <div class="form-group row">
+            <label for="contact-reason" class="col-lg-5 col-form-label text-lg-right required-field">Reason for
+                Inquiry:</label>
+            <div class="col-lg-5">
+                <select id="contact-reason" name="contact-reason" class="form-control custom-select">
+                    <option value="default" selected>Catering</option>
+                    <option value="private_party">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label for="additional-info" class="col-lg-5 col-form-label text-lg-right">Additional Information:</label>
-                <div class="col-lg-5">
-                    <textarea type="text" class="form-control" id="additional-info" name="additional-info" rows="5"
-                        placeholder="Additional Information"></textarea>
-                </div>
+        <div class="form-group row">
+            <label for="additional-info" class="col-lg-5 col-form-label text-lg-right">Additional Information:</label>
+            <div class="col-lg-5">
+                <textarea type="text" class="form-control" id="additional-info" name="additional-info" rows="5"
+                    placeholder="Additional Information"></textarea>
             </div>
-            <fieldset class="form-group">
-                <div class="row">
-                    <legend class="col-form-label pt-0 col-lg-5 col-form-label text-lg-right">Have you been to the
-                        resturant?</legend>
-                    <div class="col-lg-5">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="visited" id="inlineRadio1" value="no"
-                                checked>
-                            <label class="form-check-label" for="inlineRadio1">No</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="visited" id="inlineRadio2" value="yes">
-                            <label class="form-check-label" for="inlineRadio2">Yes</label>
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-
-            <div class="form-group row">
-                <label class="col-lg-5 col-form-label text-lg-right pt-0">Best days to contact you:</label>
+        </div>
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label pt-0 col-lg-5 col-form-label text-lg-right">Have you been to the
+                    resturant?</legend>
                 <div class="col-lg-5">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="monday" id="monday" value="monday">
-                        <label class="form-check-label" for="monday">M</label>
+                        <input class="form-check-input" type="radio" name="visited" id="inlineRadio1" value="no"
+                            checked>
+                        <label class="form-check-label" for="inlineRadio1">No</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="tuesday" id="tuesday" value="tuesday">
-                        <label class="form-check-label" for="tuesday">T</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="wednesday" id="wednesday" value="wednesday">
-                        <label class="form-check-label" for="wednesday">W</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="thursday" id="thursday" value="thursday">
-                        <label class="form-check-label" for="thursday">Th</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="friday" id="friday" value="friday">
-                        <label class="form-check-label" for="friday">F</label>
+                        <input class="form-check-input" type="radio" name="visited" id="inlineRadio2" value="yes">
+                        <label class="form-check-label" for="inlineRadio2">Yes</label>
                     </div>
                 </div>
             </div>
+        </fieldset>
 
-            <div class="form-group row">
-                <div class="col-lg-5 offset-5">
-                    <button type="submit" class="btn btn-primary">Send Request</button>
+        <div class="form-group row">
+            <label class="col-lg-5 col-form-label text-lg-right pt-0">Best days to contact you:</label>
+            <div class="col-lg-5">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="monday" id="monday" value="monday">
+                    <label class="form-check-label" for="monday">M</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="tuesday" id="tuesday" value="tuesday">
+                    <label class="form-check-label" for="tuesday">T</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="wednesday" id="wednesday" value="wednesday">
+                    <label class="form-check-label" for="wednesday">W</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="thursday" id="thursday" value="thursday">
+                    <label class="form-check-label" for="thursday">Th</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="friday" id="friday" value="friday">
+                    <label class="form-check-label" for="friday">F</label>
                 </div>
             </div>
-        </form>
+        </div>
 
-        <hr />
-        <!-- the footer -->
-        <footer>
-            <p>
-                4500 American Blvd, Raleigh, NC 18754 <br />
-                919-555-8787
-            </p>
-        </footer>
+        <div class="form-group row">
+            <div class="col-lg-5 offset-5">
+                <button type="submit" class="btn btn-primary">Send Request</button>
+            </div>
+        </div>
+    </form>
 
-    </main>
+    <hr />
+    <!-- Footer -->
+    <footer class="jumbotron font-small text-center p-1">
+        4500 American Blvd, Raleigh, NC 18754 <br />
+        919-555-8787
+    </footer>
+    <!-- Footer -->
+
 </body>
 
 </html>

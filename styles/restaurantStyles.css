@@ -25,3 +25,8 @@ nav a.active, nav a:active {
     padding: 10px;
     font-weight: bold;
 }
+
+.jumbotron {
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
